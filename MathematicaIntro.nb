@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    188345,       3616]
-NotebookOptionsPosition[    183231,       3441]
-NotebookOutlinePosition[    183569,       3456]
-CellTagsIndexPosition[    183526,       3453]
+NotebookDataLength[    196269,       3795]
+NotebookOptionsPosition[    190490,       3598]
+NotebookOutlinePosition[    190828,       3613]
+CellTagsIndexPosition[    190785,       3610]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -42,9 +42,10 @@ computation.  ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
  " really helps you do MATH (e.g., like algebra, trig, and calculus), as \
-opposed to doing CALCULATIONS (manipulating and combining numbers)."
+opposed to only doing CALCULATIONS (i.e., manipulating and combining numbers)."
 }], "Text",
- CellChangeTimes->{{3.598202697003887*^9, 3.59820280595752*^9}}]
+ CellChangeTimes->{{3.598202697003887*^9, 3.59820280595752*^9}, {
+  3.5982095738892736`*^9, 3.598209582482595*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -60,7 +61,7 @@ Cell[TextData[{
   3.598203337988016*^9}, {3.598204411998292*^9, 3.598204432590646*^9}}],
 
 Cell[TextData[{
- "This document is of a type called a \[OpenCurlyDoubleQuote]notebook\
+ "This file is a type of document called a \[OpenCurlyDoubleQuote]notebook\
 \[CloseCurlyDoubleQuote], which is the basic file format in ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
@@ -68,7 +69,7 @@ Cell[TextData[{
  StyleBox["Mathematica",
   FontSlant->"Italic"],
  "-specific) format; it is not a plain text file.  That means it will only \
-display properly when viewed IN ",
+display properly when viewed in ",
  StyleBox["Mathematica.",
   FontSlant->"Italic"],
  "  That might seem undesireable to you, but  ",
@@ -83,22 +84,24 @@ create documents are are \[OpenCurlyDoubleQuote]computable\
   3.598201954740672*^9, 3.5982019603808804`*^9}, {3.5982024365655203`*^9, 
   3.598202446660379*^9}, {3.598203042245144*^9, 3.598203102468997*^9}, {
   3.598203475909377*^9, 3.598203535613688*^9}, {3.5982037070068073`*^9, 
-  3.5982037739083977`*^9}, {3.59820386809722*^9, 3.598203952623969*^9}}],
+  3.5982037739083977`*^9}, {3.59820386809722*^9, 3.598203952623969*^9}, {
+  3.598209598947382*^9, 3.59820961755608*^9}}],
 
 Cell["\<\
-Note the innermost square bracket far to the right -->
+Note the left-most square bracket (\[OpenCurlyDoubleQuote]]\
+\[CloseCurlyDoubleQuote]) in the right hand margin (over there -->)
 That demarcates a \[OpenCurlyDoubleQuote]cell\[CloseCurlyDoubleQuote], which \
 is the basic unit of input in mathematica
 Cells that are formatted as mathematical \[OpenCurlyDoubleQuote]input\
 \[CloseCurlyDoubleQuote] can be evaluated.  When you press \
-\[OpenCurlyDoubleQuote]enter\[CloseCurlyDoubleQuote] (or \
-\[OpenCurlyDoubleQuote]shift-return\[CloseCurlyDoubleQuote]), ALL the \
-contents of the current cell will be evaluated (both before and after the \
-cursor).  When you have a vertical cursor, you are inside a cell.  When you \
+\[OpenCurlyDoubleQuote]shift-return\[CloseCurlyDoubleQuote] on your keyboard, \
+ALL the contents of the current cell (where your cursor is) will be \
+evaluated.  When you have a vertical cursor, you are inside a cell.  When you \
 have a horizontal line and cursor, you are in between cells (and if you start \
 typing, it will insert a new cell at that spot).\
 \>", "Text",
- CellChangeTimes->{{3.598203961887257*^9, 3.598204003158564*^9}}],
+ CellChangeTimes->{{3.598203961887257*^9, 3.598204003158564*^9}, {
+  3.598209637355309*^9, 3.598209711698757*^9}}],
 
 Cell[TextData[{
  "Looking around this notebook, you\[CloseCurlyQuote]ll see cells with a \
@@ -141,7 +144,7 @@ Cell[BoxData[
  RowBox[{"5", "+", 
   RowBox[{"3", " ", "x"}]}]], "Output",
  CellChangeTimes->{3.5982019309550047`*^9, 3.598203635273342*^9, 
-  3.598204140665268*^9, 3.598204172615068*^9}]
+  3.598204140665268*^9, 3.598204172615068*^9, 3.5982097430860853`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -162,7 +165,7 @@ Cell[BoxData[
     RowBox[{"3", " ", "x"}]}], ")"}]}]], "Output",
  CellChangeTimes->{
   3.5982019960294113`*^9, {3.5982036223962097`*^9, 3.5982036365027933`*^9}, 
-   3.598204174529476*^9}],
+   3.598204174529476*^9, 3.59820974524409*^9}],
 
 Cell[BoxData[
  SuperscriptBox[
@@ -171,7 +174,7 @@ Cell[BoxData[
     RowBox[{"3", " ", "x"}]}], ")"}], "2"]], "Output",
  CellChangeTimes->{
   3.5982019960294113`*^9, {3.5982036223962097`*^9, 3.5982036365027933`*^9}, 
-   3.598204174532349*^9}]
+   3.598204174529476*^9, 3.5982097452452106`*^9}]
 }, Open  ]],
 
 Cell[TextData[{
@@ -183,20 +186,22 @@ previously evaluated, so when I used \[OpenCurlyDoubleQuote]y\
 \[CloseCurlyDoubleQuote] in the second line, it automatically substituted the \
 assigned value of y"
 }], "Text",
- CellChangeTimes->{{3.598201997023498*^9, 3.598202066677081*^9}}],
+ CellChangeTimes->{{3.598201997023498*^9, 3.598202066677081*^9}, {
+  3.598209747267364*^9, 3.598209752907037*^9}}],
 
 Cell[TextData[{
  "As in many languages, \[OpenCurlyDoubleQuote]=\[CloseCurlyDoubleQuote] is \
-the assignment operator.  ",
+the \[OpenCurlyDoubleQuote]assignment operator.\[CloseCurlyDoubleQuote]  ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
  " is very nice about how you use this and what can be \
 \[OpenCurlyDoubleQuote]assigned\[CloseCurlyDoubleQuote] to a variable.  You \
-can assign a value, a variable, an expression, a data array, a list of rules, \
-a graphical object, and more..."
+can assign a value, a symbolic variable, an expression of mixed components, a \
+data array, a list of rules, a graphical object, and more..."
 }], "Text",
  CellChangeTimes->{{3.598202071687461*^9, 3.598202107156406*^9}, {
-  3.598203355053393*^9, 3.598203384709834*^9}}],
+  3.598203355053393*^9, 3.598203384709834*^9}, {3.598209760779314*^9, 
+  3.59820979536303*^9}}],
 
 Cell[CellGroupData[{
 
@@ -259,9 +264,10 @@ Cell[TextData[{
   FontSlant->"Italic"],
  " to DO that evaluation.   There is really only one subtle thing here.  On \
 most computer operating systems, if you press \[OpenCurlyDoubleQuote]return\
-\[CloseCurlyDoubleQuote] or whatever the carriage return key is labeled, you \
+\[CloseCurlyDoubleQuote] or whatever the carriage return key is labeled \
+(sometimes labeled \[OpenCurlyDoubleQuote]enter\[CloseCurlyDoubleQuote]), you \
 get a carriage return (i.e., a line break).  This is handy because it allows \
-you to put multiple expressions in the same cell.  However, to have ",
+you to put multiple lines of expressions in the same cell.  However, to have ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
  " evaluate your input, you need to press \[OpenCurlyDoubleQuote]Shift-Return\
@@ -273,7 +279,8 @@ you want ",
   FontSlant->"Italic"],
  " to evaluate."
 }], "Text",
- CellChangeTimes->{{3.598204194590995*^9, 3.5982044041580887`*^9}}]
+ CellChangeTimes->{{3.598204194590995*^9, 3.5982044041580887`*^9}, {
+  3.5982098307234497`*^9, 3.59820984317307*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -313,9 +320,9 @@ FontSlant->\"Italic\"]\) part 2\>\"", ")"}], "was", " ", "made", " ", "with",
    RowBox[{
    "mathematical", " ", "punctuation", " ", "marks", " ", "like", " ", "the", 
     " ", 
-    RowBox[{"commas", ".", "  ", "Hence"}], " ", "it", " ", "does", " ", 
-    "not", " ", "evaluate", " ", "this", " ", "if", " ", "you", " ", "tell", 
-    " ", "it", " ", "to"}]}], ",", " ", 
+    RowBox[{"commas", ".", "  ", "Hence"}], " ", "it", " ", "can", " ", "not",
+     " ", "evaluate", " ", "this", " ", "if", " ", "you", " ", "tell", " ", 
+    "it", " ", "to"}]}], ",", " ", 
   RowBox[{
   "but", " ", "rather", " ", "gives", " ", "an", " ", "error", " ", 
    "message"}], ",", " ", 
@@ -329,7 +336,8 @@ FontSlant->\"Italic\"]\) part 2\>\"", ")"}], "was", " ", "made", " ", "with",
   3.598201736710676*^9, 3.598201768075634*^9}, {3.598202206833426*^9, 
   3.5982022337773314`*^9}, {3.598202320449526*^9, 3.598202371545101*^9}, {
   3.598202461329873*^9, 3.598202523234682*^9}, {3.59820311395251*^9, 
-  3.598203151201356*^9}, {3.598204462346546*^9, 3.598204500373271*^9}},
+  3.598203151201356*^9}, {3.598204462346546*^9, 3.598204500373271*^9}, {
+  3.598209880441696*^9, 3.598209880669586*^9}},
  EmphasizeSyntaxErrors->True],
 
 Cell[CellGroupData[{
@@ -345,7 +353,8 @@ Cell[BoxData[
  RowBox[{"can", " ", "expressions", " ", "handle", " ", "like", " ", 
   "Mathematica", " ", "one", " ", "this", " ", "though"}]], "Output",
  CellChangeTimes->{3.598201702725403*^9, 3.598201780474086*^9, 
-  3.598202541807158*^9, 3.598203162174472*^9, 3.598204505798065*^9}]
+  3.598202541807158*^9, 3.598203162174472*^9, 3.598204505798065*^9, 
+  3.598209891027787*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -362,23 +371,59 @@ Cell[BoxData[
    "of", " ", "order", " ", "output", " ", "the", " ", 
   "variables"}]], "Output",
  CellChangeTimes->{3.598201799909726*^9, 3.5982025486953907`*^9, 
-  3.598203163903859*^9, 3.5982045075265627`*^9}]
+  3.598203163903859*^9, 3.5982045075265627`*^9, 3.5982098931472197`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"It", " ", "can", " ", "treat", " ", "A", " ", "sentence", " ", 
-  "like", " ", "this", " ", "one", " ", "as", " ", "math", " ", "because", 
-  " ", "a", " ", "variable", " ", "can", " ", "be", " ", "one", " ", "letter",
-   " ", "long", " ", "or", " ", "a", " ", "bunch", " ", "of", " ", "letters", 
-  " ", "long", " ", "and", " ", "a", " ", "blank", " ", "space", " ", 
-  "between", " ", "variables", " ", "is", " ", "interpreted", " ", "as", " ", 
-  "multiplication", " "}]], "Input",
+ RowBox[{"notice", " ", "also", " ", "that", " ", "two", " ", "or", " ", 
+  "more", " ", "characters", " ", "together", " ", "with", " ", "no", " ", 
+  "spaces", " ", "between", " ", "are", " ", "treated", " ", "as", " ", "one",
+   " ", "variable"}]], "Input",
+ CellChangeTimes->{{3.598210057955213*^9, 3.598210086206852*^9}}],
+
+Cell[BoxData[
+ RowBox[{"also", " ", "are", " ", "as", " ", "between", " ", "characters", 
+  " ", "more", " ", "no", " ", "notice", " ", "one", " ", "or", " ", "spaces",
+   " ", "that", " ", "together", " ", "treated", " ", "two", " ", "variable", 
+  " ", "with"}]], "Output",
+ CellChangeTimes->{3.598210087214456*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"so", " ", "gfe", " ", "is", " ", "treated", " ", "differently", " ",
+   "than", " ", "g", " ", "f", " ", "e", " ", "because", " ", "single", " ", 
+  "space", " ", "is", " ", "interpreted", " ", "as", " ", 
+  "multiplication"}]], "Input",
+ CellChangeTimes->{{3.59821010072878*^9, 3.598210140608292*^9}, {
+  3.59821021117635*^9, 3.598210240542108*^9}}],
+
+Cell[BoxData[
+ RowBox[{"because", " ", "differently", " ", "e", " ", "f", " ", "g", " ", 
+  "gfe", " ", "is", " ", "means", " ", "multiplication", " ", "single", " ", 
+  "so", " ", "space", " ", "than", " ", "treated"}]], "Output",
+ CellChangeTimes->{{3.598210115268681*^9, 3.598210141384262*^9}, 
+   3.5982102157983027`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mathematica", " ", "can", " ", "treat", " ", "A", " ", "sentence", 
+  " ", "like", " ", "this", " ", "one", " ", "as", " ", "math", " ", 
+  "because", " ", "a", " ", "variable", " ", "can", " ", "be", " ", "one", 
+  " ", "letter", " ", "long", " ", "or", " ", "a", " ", "bunch", " ", "of", 
+  " ", "letters", " ", "long", " ", "and", " ", "a", " ", "blank", " ", 
+  "space", " ", "between", " ", "variables", " ", "is", " ", "interpreted", 
+  " ", "as", " ", "multiplication", " "}]], "Input",
  CellChangeTimes->{{3.59820171012459*^9, 3.598201719750602*^9}, {
   3.59820225561672*^9, 3.5982022809969597`*^9}, {3.598202562533556*^9, 
   3.598202577025016*^9}, {3.59820317742749*^9, 3.5982031963299017`*^9}, {
-  3.5982032303809023`*^9, 3.5982032305069103`*^9}}],
+  3.5982032303809023`*^9, 3.5982032305069103`*^9}, {3.5982102459064903`*^9, 
+  3.59821024746001*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -435,52 +480,61 @@ Cell[BoxData[
  CellChangeTimes->{
   3.59820172021392*^9, 3.598202281407752*^9, 3.598202578606209*^9, {
    3.5982031723205557`*^9, 3.5982032007462683`*^9}, 3.598203231056499*^9, 
-   3.598204509408661*^9}]
+   3.598204509408661*^9, 3.5982098975305862`*^9}]
 }, Open  ]],
+
+Cell["\<\
+Can you figure out why the last expression was displayed as it was in the \
+output?\
+\>", "Text",
+ CellChangeTimes->{{3.598210270819352*^9, 3.5982102852121983`*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"it", " ", "also", " ", "automatically", " ", "substitutes", " ", 
-  "and", " ", "groups", " ", "factors", " ", "together", " ", "when", " ", 
-  "it", " ", "can"}]], "Input",
+ RowBox[{"Mathematica", " ", "also", " ", "automatically", " ", "substitutes",
+   " ", "and", " ", "groups", " ", "factors", " ", "together", " ", "when", 
+  " ", "it", " ", "can"}]], "Input",
  CellChangeTimes->{{3.598201804398243*^9, 3.598201823726919*^9}, {
-  3.598204536637217*^9, 3.598204545059671*^9}}],
+  3.598204536637217*^9, 3.598204545059671*^9}, {3.598210289368349*^9, 
+  3.598210291018914*^9}}],
 
 Cell[BoxData[
  RowBox[{"also", " ", "and", " ", "automatically", " ", "can", " ", "factors",
-   " ", "groups", " ", 
-  SuperscriptBox["it", "2"], " ", "substitutes", " ", "together", " ", 
-  "when"}]], "Output",
+   " ", "groups", " ", "it", " ", "Mathematica", " ", "substitutes", " ", 
+  "together", " ", "when"}]], "Output",
  CellChangeTimes->{
-  3.598202592667245*^9, {3.5982045307704687`*^9, 3.598204546505393*^9}}]
+  3.598202592667245*^9, {3.5982045307704687`*^9, 3.598204546505393*^9}, 
+   3.5982099130044537`*^9, 3.598210291629375*^9}]
 }, Open  ]],
 
 Cell[TextData[{
  "Does it make sense to you that ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
- " wrote \[OpenCurlyDoubleQuote]as-squared\[CloseCurlyDoubleQuote] and \
-\[OpenCurlyDoubleQuote]it-squared\[CloseCurlyDoubleQuote] etc. in the last \
+ " wrote \[OpenCurlyDoubleQuote]as-squared,\[CloseCurlyDoubleQuote] \
+\[OpenCurlyDoubleQuote]it-squared\[CloseCurlyDoubleQuote], etc. in the last \
 two sets of output?  How about why \[OpenCurlyDoubleQuote]a\
-\[CloseCurlyDoubleQuote] did not appear and why \[OpenCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote] was not treated the same as \[OpenCurlyDoubleQuote]a\
-\[CloseCurlyDoubleQuote]?\nOK, these examples might seem kind of silly, but \
-they really do illustrate how ",
+\[CloseCurlyDoubleQuote] did not appear in the output and why \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] was not treated the same as \
+\[OpenCurlyDoubleQuote]a\[CloseCurlyDoubleQuote]?\nOK, these examples might \
+seem kind of silly, but they really do illustrate how ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
- " \[OpenCurlyDoubleQuote]thinks\[CloseCurlyDoubleQuote] about the input YOU \
-give it.  Remember, this is piece of computer software.  It does not think \
-per se (at least not yet, though ",
+ " treats the input YOU give it.  Remember, this is piece of computer \
+software.  It does not think per se (at least not yet, though ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
  " is getting really close to that).  It does what YOU tell it to do, no more \
-and no less."
+and no less.  When you give it \[OpenCurlyDoubleQuote]input\
+\[CloseCurlyDoubleQuote], by default it interprets that input as a \
+mathematical expression."
 }], "Text",
  CellChangeTimes->{{3.598202157820364*^9, 3.5982021908841867`*^9}, {
   3.598202293028297*^9, 3.598202308308352*^9}, {3.598202614709223*^9, 
   3.598202650581278*^9}, {3.5982032384727373`*^9, 3.598203248533461*^9}, {
-  3.598204554902506*^9, 3.598204656846692*^9}}]
+  3.598204554902506*^9, 3.598204656846692*^9}, {3.598209924419511*^9, 
+  3.598209992595541*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -505,13 +559,16 @@ optionalArgument1, ...]\nThere are some important details here:\
 \[LineSeparator]1. The square braces.  In ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
- ", these are used for functions.  NOT parentheses.\n2. arguments: an \
-argument is the input(s) to a function.  Different functions take different \
-numbers of arguments and different formats of arguments.\n3. commas:  \
-separate arguments.  That\[CloseCurlyQuote]s how ",
+ ", these are used for functions.  NOT parentheses.  NOT curly braces (more \
+on those below).\n2.  Arguments.  An argument is an input(s) to a function.  \
+Different functions take different numbers of arguments and different formats \
+of arguments.  Parentheses and curly braces may often help format arguments.\n\
+3.  Commas separate arguments.  That\[CloseCurlyQuote]s how ",
  StyleBox["Mathematica",
   FontSlant->"Italic"],
- " knows where one argument stops and the next begins.\n4. \nLet\
+ " knows where one argument stops and the next begins.\n4.  Optional \
+arguments aren\[CloseCurlyQuote]t necessary (as the name implies) but can \
+change the behavior of the function in various useful ways\nLet\
 \[CloseCurlyQuote]s look at an example by first defining a new variable:\n"
 }], "Text",
  CellChangeTimes->{{3.598201853388789*^9, 3.5982018921958113`*^9}, {
@@ -519,7 +576,8 @@ separate arguments.  That\[CloseCurlyQuote]s how ",
   3.5982032818691463`*^9}, {3.598204692782543*^9, 3.59820484342907*^9}, {
   3.598204883269341*^9, 3.598204953366674*^9}, {3.598204983727384*^9, 
   3.598205020672329*^9}, {3.598206780111841*^9, 3.5982067842165003`*^9}, {
-  3.598208486354162*^9, 3.598208514817937*^9}}],
+  3.598208486354162*^9, 3.598208514817937*^9}, {3.598210002027012*^9, 
+  3.598210033203054*^9}, {3.59821032829458*^9, 3.598210403788721*^9}}],
 
 Cell[CellGroupData[{
 
@@ -683,7 +741,8 @@ Cell[BoxData[{
 Cell[BoxData[
  RowBox[{"4", " ", 
   SuperscriptBox["x", "b"]}]], "Output",
- CellChangeTimes->{3.598207214486474*^9, 3.598208105138867*^9}]
+ CellChangeTimes->{3.598207214486474*^9, 3.598208105138867*^9, 
+  3.598210823198934*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -737,10 +796,12 @@ more than one independent variable.\
 Cell[CellGroupData[{
 
 Cell["\<\
-Brute force: assign a numeric value to b\
+A. Brute force: assign a numeric value to b\
 \>", "Subsection",
  CellChangeTimes->{{3.598207457440319*^9, 3.598207459451816*^9}, {
-   3.598207555377301*^9, 3.59820756467586*^9}, 3.598208566905694*^9}],
+   3.598207555377301*^9, 3.59820756467586*^9}, 3.598208566905694*^9, {
+   3.5982110964204893`*^9, 3.5982110997567453`*^9}, {3.5982111455886497`*^9, 
+   3.598211145820361*^9}}],
 
 Cell["Suppose we do the following", "Text",
  CellChangeTimes->{{3.598207464340653*^9, 3.598207475456271*^9}, {
@@ -756,8 +817,9 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"-", "2"}]], "Output",
- CellChangeTimes->{3.598207485771255*^9, 3.598207587394484*^9, 
-  3.59820811153065*^9}]
+ CellChangeTimes->{
+  3.598207485771255*^9, 3.598207587394484*^9, 3.59820811153065*^9, {
+   3.59821080440909*^9, 3.598210825980505*^9}}]
 }, Open  ]],
 
 Cell["\<\
@@ -773,7 +835,9 @@ Cell[BoxData["y"], "Input",
 Cell[BoxData[
  FractionBox["4", 
   SuperscriptBox["x", "2"]]], "Output",
- CellChangeTimes->{3.598207599235712*^9, 3.598208113604904*^9}]
+ CellChangeTimes->{
+  3.598207599235712*^9, 3.598208113604904*^9, {3.598210818869066*^9, 
+   3.598210829969715*^9}}]
 }, Open  ]],
 
 Cell["Now our plot will work:", "Text",
@@ -862,24 +926,115 @@ vUIDutxbSYOVPz3pDZIhYTSoZCrM/zl8GGxFt+0PpsH/ANLcNxY=
   PlotRangePadding->{
     Scaled[0.02], 
     Scaled[0.02]}]], "Output",
- CellChangeTimes->{3.598207504058036*^9, 3.598208115842772*^9}]
-}, Open  ]],
-
-Cell["\<\
-That isn\[CloseCurlyQuote]t very elegant though, because we have lost some \
-generality in our ability to work with y.\
-\>", "Text",
- CellChangeTimes->{{3.598207519265123*^9, 3.598207543889029*^9}}]
+ CellChangeTimes->{
+  3.598207504058036*^9, 3.598208115842772*^9, {3.598210811857594*^9, 
+   3.598210832693185*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell["\<\
-Alternative Method #1: Use a substitution that does not change the value \
+A.1. Breaking down the Plot[...] function\[CloseCurlyQuote]s syntax\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.598210424950529*^9, 3.598210484716*^9}, {
+  3.5982111077412863`*^9, 3.598211109068507*^9}, {3.5982111504282217`*^9, 
+  3.5982111520127287`*^9}}],
+
+Cell[TextData[{
+ "OK, now we need one more little bit on syntax.  Let\[CloseCurlyQuote]s look \
+at how we wrote the Plot function above:\nPlot[y,{x,0,10}]\nAgain, we have a \
+general form here:  FunctionName[argument1, argument2], though that might not \
+look so obvious.  argument1 is easy, that\[CloseCurlyQuote]s \
+\[OpenCurlyDoubleQuote]y\[CloseCurlyDoubleQuote].  argument2 however looks \
+like three arguments until we note the curly braces (I said we would come \
+back to those, right?).  Curly braces in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " are used to enclose LISTS or ARRAYS of things.  In this case, we have a \
+list that tells the Plot function three things: (i) the name of the \
+independent variable, x, (ii) the minimum value x takes, and (iii) the \
+maximum value x takes.  How does Plot \[OpenCurlyDoubleQuote]know\
+\[CloseCurlyDoubleQuote] how to intrepret those three things in that way?  \
+That\[CloseCurlyQuote]s in how the creators of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " wrote the Plot function.  Argument2 has to have this form.  How would you \
+know that?  That\[CloseCurlyQuote]s part of learning the language.  Let\
+\[CloseCurlyQuote]s try something different and see what happens:"
+}], "Text",
+ CellChangeTimes->{{3.598210494736484*^9, 3.5982107984600363`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{"y", ",", "x", ",", "0", ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.598210946209058*^9, 3.59821094802451*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "nonopt"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Options expected (instead of \[NoBreak]\\!\\(10\\)\
+\[NoBreak]) beyond position \[NoBreak]\\!\\(3\\)\[NoBreak] in \
+\[NoBreak]\\!\\(Plot[\\(\\(y, x, 0, 10\\)\\)]\\)\[NoBreak]. An option must be \
+a rule or a list of rules. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/nonopt\\\", ButtonNote -> \
+\\\"Plot::nonopt\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.598210948388625*^9}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{"y", ",", "x", ",", "0", ",", "10"}], "]"}]], "Output",
+ CellChangeTimes->{{3.598210943492959*^9, 3.598210948389629*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Oh, so you weren\[CloseCurlyQuote]t \[OpenCurlyDoubleQuote]expecting\
+\[CloseCurlyDoubleQuote] that, eh, ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "?  Why not?  Because it is not a person who tries to anticipate and fix \
+errors; it is a piece of software that does EXACTLY what you tell it to do.  \
+(Oh yes, I am aware of ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "\[CloseCurlyQuote]s new \[OpenCurlyDoubleQuote]freeform input\
+\[CloseCurlyDoubleQuote] functionality, but we\[CloseCurlyQuote]ll talk about \
+that later...)."
+}], "Text",
+ CellChangeTimes->{{3.598210964757663*^9, 3.598211074724588*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+A.2. Brute force assignment of a value to b works, but can we do better?\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.59821085688435*^9, 3.5982108856919937`*^9}, {
+  3.598211015292244*^9, 3.598211019035627*^9}, {3.598211111772661*^9, 
+  3.598211113043894*^9}, {3.598211155652196*^9, 3.5982111571800547`*^9}}],
+
+Cell["\<\
+Our method for getting a plot of y worked, but wasn\[CloseCurlyQuote]t very \
+elegant, because we have lost some generality in our ability to work with y.  \
+Can we do better?  Yes, as the following three methods illustrate.\
+\>", "Text",
+ CellChangeTimes->{{3.598210888844461*^9, 3.598210919595697*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+B. Alternative Method #1: Use a substitution that does not change the value \
 assigned to b\
 \>", "Subsection",
  CellChangeTimes->{{3.598207617409696*^9, 3.598207645208897*^9}, {
-  3.598208581914299*^9, 3.5982086049791117`*^9}}],
+  3.598208581914299*^9, 3.5982086049791117`*^9}, {3.598211115419941*^9, 
+  3.5982111158762817`*^9}, {3.5982111601911983`*^9, 3.598211160436441*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1373,12 +1528,13 @@ Cell[BoxData["b"], "Output",
 Cell[CellGroupData[{
 
 Cell["\<\
-Alternative Method #2: \[OpenCurlyDoubleQuote]Manipulate\
+C. Alternative Method #2: \[OpenCurlyDoubleQuote]Manipulate\
 \[CloseCurlyDoubleQuote]\
 \>", "Subsection",
  CellChangeTimes->{{3.598207960194065*^9, 3.5982079675689697`*^9}, {
   3.5982081422181587`*^9, 3.598208143466024*^9}, {3.598208595713717*^9, 
-  3.598208597341323*^9}}],
+  3.598208597341323*^9}, {3.598211121715788*^9, 3.598211122380237*^9}, {
+  3.598211166028225*^9, 3.5982111664068727`*^9}}],
 
 Cell[TextData[{
  "\[OpenCurlyDoubleQuote]Manipulate\[CloseCurlyDoubleQuote] is a super cool \
@@ -1467,11 +1623,12 @@ we won\[CloseCurlyQuote]t worry about them just yet.\
 Cell[CellGroupData[{
 
 Cell["\<\
-Alternative Method #3: 3-D plots\
+D. Alternative Method #3: 3-D plots\
 \>", "Subsection",
  CellChangeTimes->{{3.598207447500229*^9, 3.598207449456468*^9}, {
   3.5982082681131268`*^9, 3.598208271017761*^9}, {3.598208590961337*^9, 
-  3.59820859216496*^9}}],
+  3.59820859216496*^9}, {3.598211127331832*^9, 3.598211127691594*^9}, {
+  3.598211175004613*^9, 3.598211175332341*^9}}],
 
 Cell["\<\
 Plot3D is another great plotting function for when you want to vary two \
@@ -3459,161 +3616,183 @@ Cell[CellGroupData[{
 Cell[579, 22, 104, 1, 93, "Title"],
 Cell[CellGroupData[{
 Cell[708, 27, 177, 6, 81, "Section"],
-Cell[888, 35, 503, 11, 71, "Text"]
+Cell[888, 35, 565, 12, 71, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1428, 51, 335, 8, 81, "Section"],
-Cell[1766, 61, 1198, 24, 91, "Text"],
-Cell[2967, 87, 811, 13, 111, "Text"],
-Cell[3781, 102, 914, 16, 71, "Text"],
-Cell[4698, 120, 118, 3, 31, "Text"],
+Cell[1490, 52, 335, 8, 81, "Section"],
+Cell[1828, 62, 1251, 25, 91, "Text"],
+Cell[3082, 89, 879, 14, 111, "Text"],
+Cell[3964, 105, 914, 16, 71, "Text"],
+Cell[4881, 123, 118, 3, 31, "Text"],
 Cell[CellGroupData[{
-Cell[4841, 127, 538, 10, 99, "Input"],
-Cell[5382, 139, 186, 4, 32, "Output"]
+Cell[5024, 130, 538, 10, 99, "Input"],
+Cell[5565, 142, 210, 4, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5605, 148, 359, 7, 55, "Input"],
-Cell[5967, 157, 245, 7, 32, "Output"],
-Cell[6215, 166, 246, 7, 34, "Output"]
+Cell[5812, 151, 359, 7, 55, "Input"],
+Cell[6174, 160, 266, 7, 32, "Output"],
+Cell[6443, 169, 270, 7, 34, "Output"]
 }, Open  ]],
-Cell[6476, 176, 397, 9, 51, "Text"],
-Cell[6876, 187, 546, 11, 51, "Text"],
+Cell[6728, 179, 446, 10, 51, "Text"],
+Cell[7177, 191, 670, 12, 71, "Text"],
 Cell[CellGroupData[{
-Cell[7447, 202, 415, 9, 99, "Input"],
-Cell[7865, 213, 119, 2, 32, "Output"],
-Cell[7987, 217, 119, 2, 32, "Output"],
-Cell[8109, 221, 143, 3, 32, "Output"],
-Cell[8255, 226, 297, 8, 37, "Output"]
+Cell[7872, 207, 415, 9, 99, "Input"],
+Cell[8290, 218, 119, 2, 32, "Output"],
+Cell[8412, 222, 119, 2, 32, "Output"],
+Cell[8534, 226, 143, 3, 32, "Output"],
+Cell[8680, 231, 297, 8, 37, "Output"]
 }, Open  ]],
-Cell[8567, 237, 428, 9, 51, "Text"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[9032, 251, 102, 1, 81, "Section"],
-Cell[9137, 254, 1101, 21, 111, "Text"]
+Cell[8992, 242, 428, 9, 51, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10275, 280, 288, 8, 81, "Section"],
-Cell[10566, 290, 2155, 42, 187, "Input"],
-Cell[CellGroupData[{
-Cell[12746, 336, 316, 5, 32, "Input"],
-Cell[13065, 343, 286, 4, 32, "Output"]
+Cell[9457, 256, 102, 1, 81, "Section"],
+Cell[9562, 259, 1235, 23, 131, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13388, 352, 292, 5, 32, "Input"],
-Cell[13683, 359, 291, 5, 32, "Output"]
+Cell[10834, 287, 288, 8, 81, "Section"],
+Cell[11125, 297, 2203, 43, 187, "Input"],
+Cell[CellGroupData[{
+Cell[13353, 344, 316, 5, 32, "Input"],
+Cell[13672, 351, 311, 5, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14011, 369, 772, 11, 55, "Input"],
-Cell[14786, 382, 2972, 55, 246, "Output"]
+Cell[14020, 361, 292, 5, 32, "Input"],
+Cell[14315, 368, 315, 5, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17795, 442, 312, 5, 32, "Input"],
-Cell[18110, 449, 304, 6, 34, "Output"]
-}, Open  ]],
-Cell[18429, 458, 1234, 24, 111, "Text"]
+Cell[14667, 378, 340, 5, 32, "Input"],
+Cell[15010, 385, 317, 5, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19700, 487, 105, 1, 81, "Section"],
-Cell[19808, 490, 1679, 31, 271, "Text"],
-Cell[CellGroupData[{
-Cell[21512, 525, 189, 5, 32, "Input"],
-Cell[21704, 532, 360, 12, 34, "Output"]
-}, Open  ]],
-Cell[22079, 547, 203, 4, 31, "Text"],
-Cell[CellGroupData[{
-Cell[22307, 555, 131, 2, 32, InheritFromParent],
-Cell[22441, 559, 297, 9, 32, "Output"]
-}, Open  ]],
-Cell[22753, 571, 581, 10, 51, "Text"],
-Cell[CellGroupData[{
-Cell[23359, 585, 71, 1, 32, "Input"],
-Cell[23433, 588, 360, 12, 34, "Output"]
-}, Open  ]],
-Cell[23808, 603, 404, 7, 51, "Text"],
-Cell[CellGroupData[{
-Cell[24237, 614, 156, 3, 32, "Input"],
-Cell[24396, 619, 269, 8, 32, "Output"]
+Cell[15364, 395, 374, 6, 32, "Input"],
+Cell[15741, 403, 325, 5, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24702, 632, 93, 1, 32, "Input"],
-Cell[24798, 635, 269, 8, 32, "Output"]
+Cell[16103, 413, 831, 12, 55, "Input"],
+Cell[16937, 427, 2996, 55, 246, "Output"]
 }, Open  ]],
-Cell[25082, 646, 148, 3, 31, "Text"]
+Cell[19948, 485, 175, 4, 31, "Text"],
+Cell[CellGroupData[{
+Cell[20148, 493, 370, 6, 32, "Input"],
+Cell[20521, 501, 350, 6, 32, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[25267, 654, 101, 1, 81, "Section"],
-Cell[25371, 657, 598, 12, 51, "Text"],
-Cell[CellGroupData[{
-Cell[25994, 673, 290, 7, 55, "Input"],
-Cell[26287, 682, 138, 3, 34, "Output"]
-}, Open  ]],
-Cell[26440, 688, 403, 8, 51, "Text"],
-Cell[CellGroupData[{
-Cell[26868, 700, 208, 5, 32, "Input"],
-Cell[27079, 707, 367, 12, 230, "Output"]
-}, Open  ]],
-Cell[27461, 722, 336, 6, 51, "Text"],
-Cell[27800, 730, 211, 4, 71, "Subsection"],
-Cell[CellGroupData[{
-Cell[28036, 738, 207, 4, 45, "Subsection"],
-Cell[28246, 744, 158, 2, 31, "Text"],
-Cell[CellGroupData[{
-Cell[28429, 750, 184, 4, 32, "Input"],
-Cell[28616, 756, 133, 3, 32, "Output"]
-}, Open  ]],
-Cell[28764, 762, 139, 3, 31, "Text"],
-Cell[CellGroupData[{
-Cell[28928, 769, 69, 1, 32, "Input"],
-Cell[29000, 772, 136, 3, 108, "Output"]
-}, Open  ]],
-Cell[29151, 778, 109, 1, 31, "Text"],
-Cell[CellGroupData[{
-Cell[29285, 783, 140, 4, 32, "Input"],
-Cell[29428, 789, 4165, 75, 243, "Output"]
-}, Open  ]],
-Cell[33608, 867, 208, 4, 31, "Text"]
+Cell[20886, 510, 1382, 26, 111, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33853, 876, 235, 5, 45, "Subsection"],
+Cell[22305, 541, 105, 1, 81, "Section"],
+Cell[22413, 544, 2025, 35, 271, "Text"],
 Cell[CellGroupData[{
-Cell[34113, 885, 154, 2, 55, "Input"],
-Cell[34270, 889, 189, 4, 34, "Output"]
+Cell[24463, 583, 189, 5, 32, "Input"],
+Cell[24655, 590, 360, 12, 34, "Output"]
 }, Open  ]],
-Cell[34474, 896, 481, 10, 71, "Text"],
+Cell[25030, 605, 203, 4, 31, "Text"],
 Cell[CellGroupData[{
-Cell[34980, 910, 304, 9, 32, "Input"],
-Cell[35287, 921, 4165, 75, 243, "Output"]
+Cell[25258, 613, 131, 2, 32, InheritFromParent],
+Cell[25392, 617, 297, 9, 32, "Output"]
 }, Open  ]],
-Cell[39467, 999, 280, 5, 51, "Text"],
+Cell[25704, 629, 581, 10, 51, "Text"],
 Cell[CellGroupData[{
-Cell[39772, 1008, 721, 20, 121, "Input"],
-Cell[40496, 1030, 183, 4, 51, "Output"],
-Cell[40682, 1036, 141, 2, 32, "Output"],
-Cell[40826, 1040, 189, 4, 34, "Output"],
-Cell[41018, 1046, 187, 4, 34, "Output"],
-Cell[41208, 1052, 17796, 302, 242, "Output"]
+Cell[26310, 643, 71, 1, 32, "Input"],
+Cell[26384, 646, 360, 12, 34, "Output"]
 }, Open  ]],
-Cell[59019, 1357, 137, 3, 31, "Text"],
+Cell[26759, 661, 404, 7, 51, "Text"],
 Cell[CellGroupData[{
-Cell[59181, 1364, 69, 1, 32, "Input"],
-Cell[59253, 1367, 70, 1, 32, "Output"]
+Cell[27188, 672, 156, 3, 32, "Input"],
+Cell[27347, 677, 269, 8, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27653, 690, 93, 1, 32, "Input"],
+Cell[27749, 693, 269, 8, 32, "Output"]
+}, Open  ]],
+Cell[28033, 704, 148, 3, 31, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28218, 712, 101, 1, 81, "Section"],
+Cell[28322, 715, 598, 12, 51, "Text"],
+Cell[CellGroupData[{
+Cell[28945, 731, 290, 7, 55, "Input"],
+Cell[29238, 740, 163, 4, 34, "Output"]
+}, Open  ]],
+Cell[29416, 747, 403, 8, 51, "Text"],
+Cell[CellGroupData[{
+Cell[29844, 759, 208, 5, 32, "Input"],
+Cell[30055, 766, 367, 12, 230, "Output"]
+}, Open  ]],
+Cell[30437, 781, 336, 6, 51, "Text"],
+Cell[30776, 789, 211, 4, 71, "Subsection"],
+Cell[CellGroupData[{
+Cell[31012, 797, 316, 6, 37, "Subsection"],
+Cell[31331, 805, 158, 2, 31, "Text"],
+Cell[CellGroupData[{
+Cell[31514, 811, 184, 4, 32, "Input"],
+Cell[31701, 817, 182, 4, 32, "Output"]
+}, Open  ]],
+Cell[31898, 824, 139, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[32062, 831, 69, 1, 32, "Input"],
+Cell[32134, 834, 189, 5, 51, "Output"]
+}, Open  ]],
+Cell[32338, 842, 109, 1, 31, "Text"],
+Cell[CellGroupData[{
+Cell[32472, 847, 140, 4, 32, "Input"],
+Cell[32615, 853, 4218, 77, 243, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36870, 935, 267, 5, 35, "Subsubsection"],
+Cell[37140, 942, 1325, 22, 171, "Text"],
+Cell[CellGroupData[{
+Cell[38490, 968, 166, 3, 32, "Input"],
+Cell[38659, 973, 602, 12, 24, "Message"],
+Cell[39264, 987, 168, 3, 32, "Output"]
+}, Open  ]],
+Cell[39447, 993, 644, 14, 71, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40128, 1012, 318, 5, 35, "Subsubsection"],
+Cell[40449, 1019, 314, 5, 51, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59372, 1374, 280, 6, 45, "Subsection"],
-Cell[59655, 1382, 608, 12, 51, "Text"],
+Cell[40812, 1030, 337, 6, 45, "Subsection"],
 Cell[CellGroupData[{
-Cell[60288, 1398, 749, 18, 78, "Input"],
-Cell[61040, 1418, 1577, 32, 332, "Output"]
+Cell[41174, 1040, 154, 2, 55, "Input"],
+Cell[41331, 1044, 189, 4, 34, "Output"]
 }, Open  ]],
-Cell[62632, 1453, 587, 10, 51, "Text"]
+Cell[41535, 1051, 481, 10, 71, "Text"],
+Cell[CellGroupData[{
+Cell[42041, 1065, 304, 9, 32, "Input"],
+Cell[42348, 1076, 4165, 75, 243, "Output"]
+}, Open  ]],
+Cell[46528, 1154, 280, 5, 51, "Text"],
+Cell[CellGroupData[{
+Cell[46833, 1163, 721, 20, 121, "Input"],
+Cell[47557, 1185, 183, 4, 51, "Output"],
+Cell[47743, 1191, 141, 2, 32, "Output"],
+Cell[47887, 1195, 189, 4, 34, "Output"],
+Cell[48079, 1201, 187, 4, 34, "Output"],
+Cell[48269, 1207, 17796, 302, 242, "Output"]
+}, Open  ]],
+Cell[66080, 1512, 137, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[66242, 1519, 69, 1, 32, "Input"],
+Cell[66314, 1522, 70, 1, 32, "Output"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63256, 1468, 227, 5, 45, "Subsection"],
-Cell[63486, 1475, 303, 5, 51, "Text"],
+Cell[66433, 1529, 380, 7, 45, "Subsection"],
+Cell[66816, 1538, 608, 12, 51, "Text"],
 Cell[CellGroupData[{
-Cell[63814, 1484, 300, 8, 32, "Input"],
-Cell[64117, 1494, 119062, 1941, 336, "Output"]
+Cell[67449, 1554, 749, 18, 78, "Input"],
+Cell[68201, 1574, 1577, 32, 332, "Output"]
+}, Open  ]],
+Cell[69793, 1609, 587, 10, 51, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70417, 1624, 325, 6, 45, "Subsection"],
+Cell[70745, 1632, 303, 5, 51, "Text"],
+Cell[CellGroupData[{
+Cell[71073, 1641, 300, 8, 32, "Input"],
+Cell[71376, 1651, 119062, 1941, 303, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

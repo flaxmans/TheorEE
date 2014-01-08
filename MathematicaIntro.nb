@@ -1,0 +1,595 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     21171,        586]
+NotebookOptionsPosition[     18683,        498]
+NotebookOutlinePosition[     19020,        513]
+CellTagsIndexPosition[     18977,        510]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Intro to Mathematica", "Title",
+ CellChangeTimes->{{3.5982026716612587`*^9, 3.59820267423635*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "What makes ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " unique?"
+}], "Section",
+ CellChangeTimes->{{3.5982026827173033`*^9, 3.5982026939916267`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is built from the ground up to do SYMBOLIC math.  Programs like Matlab and \
+R work with equations, of course, but they are best suited to NUMERIC \
+computation.  ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " really helps you do MATH (e.g., like algebra, trig, and calculus), as \
+opposed to doing CALCULATIONS (manipulating and combining numbers)."
+}], "Text",
+ CellChangeTimes->{{3.598202697003887*^9, 3.59820280595752*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Writing math in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " "
+}], "Section",
+ CellChangeTimes->{{3.598201553336604*^9, 3.598201555544587*^9}, {
+  3.5982024199409246`*^9, 3.5982024314486113`*^9}, {3.598203334181345*^9, 
+  3.598203337988016*^9}}],
+
+Cell[TextData[{
+ "This document is of a type called a \[OpenCurlyDoubleQuote]notebook\
+\[CloseCurlyDoubleQuote], which is the basic file format in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ".  The file has a proprietary (i.e., ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "-specific) format; it is not a plain text file.  That means it will only \
+display properly when viewed IN ",
+ StyleBox["Mathematica.",
+  FontSlant->"Italic"],
+ "  That might seem undesireable to you, but  ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is super badass, so we will live with that one flaw (which isn\
+\[CloseCurlyQuote]t really a flaw).\nThe benefit here is that we can EASILY \
+create documents are are \[OpenCurlyDoubleQuote]computable\
+\[CloseCurlyDoubleQuote] and human readible at the same time!  Yay!"
+}], "Text",
+ CellChangeTimes->{{3.598201853388789*^9, 3.5982018921958113`*^9}, {
+  3.598201954740672*^9, 3.5982019603808804`*^9}, {3.5982024365655203`*^9, 
+  3.598202446660379*^9}, {3.598203042245144*^9, 3.598203102468997*^9}, {
+  3.598203475909377*^9, 3.598203535613688*^9}, {3.5982037070068073`*^9, 
+  3.5982037739083977`*^9}, {3.59820386809722*^9, 3.598203952623969*^9}}],
+
+Cell["\<\
+Note the innermost square bracket far to the right -->
+That demarcates a \[OpenCurlyDoubleQuote]cell\[CloseCurlyDoubleQuote], which \
+is the basic unit of input in mathematica
+Cells that are formatted as mathematical \[OpenCurlyDoubleQuote]input\
+\[CloseCurlyDoubleQuote] can be evaluated.  When you press \
+\[OpenCurlyDoubleQuote]enter\[CloseCurlyDoubleQuote] (or \
+\[OpenCurlyDoubleQuote]shift-return\[CloseCurlyDoubleQuote]), ALL the \
+contents of the current cell will be evaluated (both before and after the \
+cursor).  When you have a vertical cursor, you are inside a cell.  When you \
+have a horizontal line and cursor, you are in between cells (and if you start \
+typing, it will insert a new cell at that spot).\
+\>", "Text",
+ CellChangeTimes->{{3.598203961887257*^9, 3.598204003158564*^9}}],
+
+Cell[TextData[{
+ "Looking around this notebook, you\[CloseCurlyQuote]ll see cells with a \
+variety of formats.  Again, that is part of what makes it easy to make files \
+that are simultaneously computable and human readable.  We are primarily \
+concerned with using ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " to help us do math. Actual math will appear in cells that have the format \
+of \[OpenCurlyDoubleQuote]input\[CloseCurlyDoubleQuote] or \
+\[OpenCurlyDoubleQuote]output\[CloseCurlyDoubleQuote] (labeled \
+\[OpenCurlyDoubleQuote]In\[CloseCurlyDoubleQuote] and \
+\[OpenCurlyDoubleQuote]Out\[CloseCurlyDoubleQuote] in the left margin once \
+evaluated).  More on this below. "
+}], "Text",
+ CellChangeTimes->{{3.598201894151177*^9, 3.598201907971588*^9}, {
+  3.598203552349765*^9, 3.5982035991417418`*^9}, {3.598203795529704*^9, 
+  3.598203853597782*^9}, {3.598204013679281*^9, 3.598204057174279*^9}}],
+
+Cell["\<\
+ Any cell can contain one or multiple expressions:\
+\>", "Text",
+ CellChangeTimes->{3.5982040607263727`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"y", "=", 
+  RowBox[{
+   RowBox[{"3", "*", "x"}], "+", "5"}]}]], "Input",
+ CellChangeTimes->{{3.598201913351347*^9, 3.598201927391577*^9}, {
+  3.59820332496951*^9, 3.598203325401615*^9}}],
+
+Cell[BoxData[
+ RowBox[{"5", "+", 
+  RowBox[{"3", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5982019309550047`*^9, 3.598203635273342*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"w", "=", 
+  RowBox[{"5", "*", "y"}]}], "\[IndentingNewLine]", 
+ RowBox[{"z", "=", 
+  RowBox[{"y", "^", "2"}]}]}], "Input",
+ CellChangeTimes->{{3.598201935006858*^9, 3.598201935726359*^9}, {
+  3.598201979911277*^9, 3.598201995103264*^9}, {3.598203613417199*^9, 
+  3.5982036216329193`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"5", " ", 
+  RowBox[{"(", 
+   RowBox[{"5", "+", 
+    RowBox[{"3", " ", "x"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.5982019960294113`*^9, {3.5982036223962097`*^9, 3.5982036365027933`*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox[
+  RowBox[{"(", 
+   RowBox[{"5", "+", 
+    RowBox[{"3", " ", "x"}]}], ")"}], "2"]], "Output",
+ CellChangeTimes->{
+  3.5982019960294113`*^9, {3.5982036223962097`*^9, 3.598203636503614*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Note that ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \[OpenCurlyDoubleQuote]remembers\[CloseCurlyDoubleQuote] what you have \
+previously evaluated, so when I used \[OpenCurlyDoubleQuote]y\
+\[CloseCurlyDoubleQuote] in the second line, it automatically substituted the \
+assigned value of y"
+}], "Text",
+ CellChangeTimes->{{3.598201997023498*^9, 3.598202066677081*^9}}],
+
+Cell[TextData[{
+ "As in many languages, \[OpenCurlyDoubleQuote]=\[CloseCurlyDoubleQuote] is \
+the assignment operator.  ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is very nice about how you use this and what can be \
+\[OpenCurlyDoubleQuote]assigned\[CloseCurlyDoubleQuote] to a variable.  You \
+can assign a value, a variable, an expression, a data array, a list of rules, \
+a graphical object, and more..."
+}], "Text",
+ CellChangeTimes->{{3.598202071687461*^9, 3.598202107156406*^9}, {
+  3.598203355053393*^9, 3.598203384709834*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"a", "=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{"a", "=", "x"}], "\[IndentingNewLine]", 
+ RowBox[{"a", "=", 
+  RowBox[{"x", "+", "1"}]}], "\[IndentingNewLine]", 
+ RowBox[{"a", "=", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "z"}], "}"}]}]}], "Input",
+ CellChangeTimes->{{3.598203385853031*^9, 3.598203389128488*^9}, {
+  3.598203648355606*^9, 3.59820366341113*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{
+  3.598203389581669*^9, {3.598203639030716*^9, 3.598203668430019*^9}}],
+
+Cell[BoxData["x"], "Output",
+ CellChangeTimes->{
+  3.598203389581669*^9, {3.598203639030716*^9, 3.598203668432351*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x"}]], "Output",
+ CellChangeTimes->{
+  3.598203389581669*^9, {3.598203639030716*^9, 3.5982036684349422`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"5", "+", 
+      RowBox[{"3", " ", "x"}]}], ")"}], "2"]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.598203389581669*^9, {3.598203639030716*^9, 3.598203668437553*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Each time I type and evaluate a new assignment to the variable \
+\[OpenCurlyDoubleQuote]a\[CloseCurlyDoubleQuote], ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " upates what is stored in that variable.  It will remember that value for \
+as long as I keep this \
+\[OpenCurlyDoubleQuote]notebook\[CloseCurlyDoubleQuote] open."
+}], "Text",
+ CellChangeTimes->{{3.598203412254414*^9, 3.598203469670244*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Writing Input", "Section",
+ CellChangeTimes->{{3.5982015201571302`*^9, 3.598201522282295*^9}, {
+  3.598202238341064*^9, 3.598202239045104*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"the", " ", "section", " ", "title", " ", "above", " ", 
+   RowBox[{"(", "\"\<Writing Input\>\"", ")"}], "was", " ", "made", " ", 
+   "with", " ", "a", " ", "special", " ", "formatting", " ", "selection", " ",
+    "for", " ", "that", " ", 
+   RowBox[{"cell", ".", "  ", "Input"}], " ", "you", " ", "type", " ", "is", 
+   " ", "interpreted", " ", "as", " ", "mathematical", " ", "\"\<input\>\"", 
+   " ", "by", " ", "default"}], ",", " ", "so", ",", " ", 
+  RowBox[{
+  "since", " ", "I", " ", "did", " ", "not", " ", "specify", " ", "any", " ", 
+   "kind", " ", "of", " ", "formatting", " ", "for", " ", "THIS", " ", 
+   "current", " ", "cell"}], ",", " ", 
+  RowBox[{
+   RowBox[{
+   "mathematica", " ", "thinks", " ", "this", " ", "sentence", " ", "is", " ",
+     "a", " ", "set", " ", "of", " ", "variables", " ", "and", " ", "does", 
+    " ", "not", " ", "like", " ", "the", "  ", "non"}], "-", 
+   RowBox[{"mathematical", " ", "punctuation", " ", 
+    RowBox[{"marks", ".", "  ", "Hence"}], " ", "it", " ", "does", " ", "not",
+     " ", "evaluate", " ", "this", " ", "if", " ", "you", " ", "tell", " ", 
+    "it", " ", "to"}]}], ",", " ", 
+  RowBox[{
+  "but", " ", "rather", " ", "gives", " ", "an", " ", "error", " ", 
+   "message"}], ",", " ", 
+  RowBox[{
+  "which", " ", "you", " ", "can", " ", "see", " ", "by", " ", "clicking", 
+   " ", "on", " ", "the", " ", "little", " ", "plus", " ", "sign", " ", "to", 
+   " ", "the", " ", "right", " ", "after", " ", "trying", " ", "to", " ", 
+   "evaluate", " ", "this", " ", 
+   RowBox[{"cell", "."}]}]}]], "Input",
+ CellChangeTimes->{{3.59820163969318*^9, 3.5982016935429993`*^9}, {
+  3.598201736710676*^9, 3.598201768075634*^9}, {3.598202206833426*^9, 
+  3.5982022337773314`*^9}, {3.598202320449526*^9, 3.598202371545101*^9}, {
+  3.598202461329873*^9, 3.598202523234682*^9}, {3.59820311395251*^9, 
+  3.598203151201356*^9}},
+ EmphasizeSyntaxErrors->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mathematica", " ", "can", " ", "handle", " ", "expressions", " ", 
+  "like", " ", "this", " ", "one", " ", "though"}]], "Input",
+ CellChangeTimes->{{3.598201697695969*^9, 3.598201702310207*^9}, {
+  3.598201776988356*^9, 3.598201780235281*^9}, {3.598202528592884*^9, 
+  3.598202541318622*^9}}],
+
+Cell[BoxData[
+ RowBox[{"can", " ", "expressions", " ", "handle", " ", "like", " ", 
+  "Mathematica", " ", "one", " ", "this", " ", "though"}]], "Output",
+ CellChangeTimes->{3.598201702725403*^9, 3.598201780474086*^9, 
+  3.598202541807158*^9, 3.598203162174472*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"notice", " ", "it", " ", "alphabetizes", " ", "the", " ", "order", 
+  " ", "of", " ", "variables", " ", "in", " ", "its", " ", 
+  "output"}]], "Input",
+ CellChangeTimes->{{3.5982017905231247`*^9, 3.598201799615089*^9}, {
+  3.598202546369882*^9, 3.598202548377652*^9}}],
+
+Cell[BoxData[
+ RowBox[{"alphabetizes", " ", "in", " ", "it", " ", "its", " ", "notice", " ",
+   "of", " ", "order", " ", "output", " ", "the", " ", 
+  "variables"}]], "Output",
+ CellChangeTimes->{3.598201799909726*^9, 3.5982025486953907`*^9, 
+  3.598203163903859*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"It", " ", "can", " ", "treat", " ", "A", " ", "sentence", " ", 
+  "like", " ", "this", " ", "one", " ", "as", " ", "math", " ", "because", 
+  " ", "a", " ", "variable", " ", "can", " ", "be", " ", "one", " ", "letter",
+   " ", "long", " ", "or", " ", "a", " ", "bunch", " ", "of", " ", "letters", 
+  " ", "long", " ", "and", " ", "a", " ", "blank", " ", "space", " ", 
+  "between", " ", "variables", " ", "is", " ", "interpreted", " ", "as", " ", 
+  "multiplication", " "}]], "Input",
+ CellChangeTimes->{{3.59820171012459*^9, 3.598201719750602*^9}, {
+  3.59820225561672*^9, 3.5982022809969597`*^9}, {3.598202562533556*^9, 
+  3.598202577025016*^9}, {3.59820317742749*^9, 3.5982031963299017`*^9}, {
+  3.5982032303809023`*^9, 3.5982032305069103`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["a", "3"], " ", "A", " ", "and", " ", 
+  SuperscriptBox["as", "2"], " ", "be", " ", "because", " ", "between", " ", 
+  "blank", " ", "bunch", " ", 
+  SuperscriptBox["can", "2"], " ", "interpreted", " ", "is", " ", "It", " ", 
+  "letter", " ", "letters", " ", "like", " ", 
+  SuperscriptBox["long", "2"], " ", "math", " ", "multiplication", " ", "of", 
+  " ", 
+  SuperscriptBox["one", "2"], " ", "or", " ", "sentence", " ", "space", " ", 
+  "this", " ", "treat", " ", "variable", " ", "variables"}]], "Output",
+ CellChangeTimes->{
+  3.59820172021392*^9, 3.598202281407752*^9, 3.598202578606209*^9, {
+   3.5982031723205557`*^9, 3.5982032007462683`*^9}, 3.598203231056499*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"it", " ", "also", " ", "automatically", " ", "groups", " ", "a", 
+  " ", "factor", " ", "together", " ", "when", " ", "it", " ", 
+  "can"}]], "Input",
+ CellChangeTimes->{{3.598201804398243*^9, 3.598201823726919*^9}}],
+
+Cell[BoxData[
+ RowBox[{"a", " ", "also", " ", "automatically", " ", "can", " ", "factor", 
+  " ", "groups", " ", 
+  SuperscriptBox["it", "2"], " ", "together", " ", "when"}]], "Output",
+ CellChangeTimes->{3.598202592667245*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Does it make sense to you that ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " wrote \[OpenCurlyDoubleQuote]a-cubed\[CloseCurlyDoubleQuote] and \
+\[OpenCurlyDoubleQuote]it-squared\[CloseCurlyDoubleQuote] in the last two \
+sets of output?  How about why \[OpenCurlyDoubleQuote]a\
+\[CloseCurlyDoubleQuote] and \[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] \
+were not grouped together?\nOK, these examples are kind of silly, but they \
+really do illustrate how ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \[OpenCurlyDoubleQuote]thinks\[CloseCurlyDoubleQuote] about what YOU tell \
+it to do with symbolic math."
+}], "Text",
+ CellChangeTimes->{{3.598202157820364*^9, 3.5982021908841867`*^9}, {
+  3.598202293028297*^9, 3.598202308308352*^9}, {3.598202614709223*^9, 
+  3.598202650581278*^9}, {3.5982032384727373`*^9, 3.598203248533461*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Functions and Syntax", "Section",
+ CellChangeTimes->{{3.598201553336604*^9, 3.598201555544587*^9}}],
+
+Cell["\<\
+Now I am using plain text formatting (Format > Style > Text).  Notice the \
+square bracket far to the right -->
+That demarcates a \[OpenCurlyDoubleQuote]cell\[CloseCurlyDoubleQuote], which \
+is the basic unit of input in mathematica\
+\>", "Text",
+ CellChangeTimes->{{3.598201853388789*^9, 3.5982018921958113`*^9}, {
+  3.598201954740672*^9, 3.5982019603808804`*^9}, {3.598203269510578*^9, 
+  3.5982032818691463`*^9}}],
+
+Cell["\<\
+A cell can contain one or multiple expressions:\
+\>", "Text",
+ CellChangeTimes->{{3.598201894151177*^9, 3.598201907971588*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"y", "=", 
+  RowBox[{
+   RowBox[{"3", "*", "x"}], "+", "5"}]}]], "Input",
+ CellChangeTimes->{{3.598201913351347*^9, 3.598201927391577*^9}}],
+
+Cell[BoxData[
+ RowBox[{"5", "+", 
+  RowBox[{"3", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5982019309550047`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"y", "=", 
+  RowBox[{
+   RowBox[{"3", "*", "x"}], "+", "5"}]}], "\[IndentingNewLine]", 
+ RowBox[{"z", "=", 
+  RowBox[{"y", "^", "2"}]}]}], "Input",
+ CellChangeTimes->{{3.598201935006858*^9, 3.598201935726359*^9}, {
+  3.598201979911277*^9, 3.598201995103264*^9}}],
+
+Cell[BoxData[
+ RowBox[{"5", "+", 
+  RowBox[{"3", " ", "x"}]}]], "Output",
+ CellChangeTimes->{3.5982019960294113`*^9}],
+
+Cell[BoxData[
+ SuperscriptBox[
+  RowBox[{"(", 
+   RowBox[{"5", "+", 
+    RowBox[{"3", " ", "x"}]}], ")"}], "2"]], "Output",
+ CellChangeTimes->{3.598201996030438*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Note that ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \[OpenCurlyDoubleQuote]remembers\[CloseCurlyDoubleQuote] what you have \
+previously evaluated, so when I used \[OpenCurlyDoubleQuote]y\
+\[CloseCurlyDoubleQuote] in the second line, it automatically substituted the \
+assigned value of y"
+}], "Text",
+ CellChangeTimes->{{3.598201997023498*^9, 3.598202066677081*^9}}],
+
+Cell[TextData[{
+ "As in many languages, \[OpenCurlyDoubleQuote]=\[CloseCurlyDoubleQuote] is \
+the assignment operator.  ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " is very nice about how you use this and what can be \
+\[OpenCurlyDoubleQuote]assigned\[CloseCurlyDoubleQuote] to a variable"
+}], "Text",
+ CellChangeTimes->{{3.598202071687461*^9, 3.598202107156406*^9}}]
+}, Open  ]],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]Return\[CloseCurlyDoubleQuote] vs. \
+\[OpenCurlyDoubleQuote]Enter\[CloseCurlyDoubleQuote] vs. \
+\[OpenCurlyDoubleQuote]Enter\[CloseCurlyDoubleQuote] or \
+\[OpenCurlyDoubleQuote]Shift-Return\[CloseCurlyDoubleQuote]\
+\>", "Section",
+ CellChangeTimes->{{3.598201561544717*^9, 3.598201607215644*^9}}],
+
+Cell["Basic Plotting", "Section",
+ CellChangeTimes->{{3.5982016158799562`*^9, 3.598201621639228*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Writing your own functions", "Section",
+ CellChangeTimes->{{3.5982016243162003`*^9, 3.598201635231717*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"\"\<Write your equations\>\"", ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\"\<Functions and syntax\>\"", 
+  ";"}], "\[IndentingNewLine]", "\"\<Enter/Return vs. \
+Shift-Enter/Return\>\"", "\[IndentingNewLine]", "\"\<Plot\>\"", "\
+\[IndentingNewLine]", "\"\<Defining your own functions\>\"", "\
+\[IndentingNewLine]", "\"\<Make a list\>\"", "\[IndentingNewLine]", \
+"\"\<ListPlot\>\"", "\[IndentingNewLine]", "\"\<Solve\>\"", "\
+\[IndentingNewLine]", "\"\<FullSimplify\>\"", "\[IndentingNewLine]", \
+"\"\<RSolve and DSolve\>\"", "\[IndentingNewLine]", "\"\<Manipulate\>\"", "\
+\[IndentingNewLine]", "\"\<Getting Help --> Google it!\>\""}], "Input",
+ CellChangeTimes->{{3.598192905381023*^9, 3.5981929262463627`*^9}, {
+  3.598196729682824*^9, 3.5981967367867928`*^9}, {3.5981967748907547`*^9, 
+  3.598196815442577*^9}, {3.598196846835184*^9, 3.598196903900012*^9}, {
+  3.598201500071446*^9, 3.598201501520041*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 739},
+WindowMargins->{{Automatic, 150}, {Automatic, -7}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 104, 1, 93, "Title"],
+Cell[CellGroupData[{
+Cell[708, 27, 177, 6, 81, "Section"],
+Cell[888, 35, 503, 11, 111, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1428, 51, 273, 8, 81, "Section"],
+Cell[1704, 61, 1198, 24, 151, "Text"],
+Cell[2905, 87, 811, 13, 151, "Text"],
+Cell[3719, 102, 914, 16, 111, "Text"],
+Cell[4636, 120, 118, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[4779, 127, 210, 5, 32, "Input"],
+Cell[4992, 134, 139, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5168, 142, 313, 7, 55, "Input"],
+Cell[5484, 151, 219, 6, 32, "Output"],
+Cell[5706, 159, 218, 6, 34, "Output"]
+}, Open  ]],
+Cell[5939, 168, 397, 9, 51, "Text"],
+Cell[6339, 179, 546, 11, 71, "Text"],
+Cell[CellGroupData[{
+Cell[6910, 194, 415, 9, 99, "Input"],
+Cell[7328, 205, 119, 2, 32, "Output"],
+Cell[7450, 209, 119, 2, 32, "Output"],
+Cell[7572, 213, 143, 3, 32, "Output"],
+Cell[7718, 218, 297, 8, 37, "Output"]
+}, Open  ]],
+Cell[8030, 229, 428, 9, 71, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8495, 243, 149, 2, 81, "Section"],
+Cell[8647, 247, 1938, 36, 231, "Input"],
+Cell[CellGroupData[{
+Cell[10610, 287, 316, 5, 32, "Input"],
+Cell[10929, 294, 264, 4, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11230, 303, 292, 5, 32, "Input"],
+Cell[11525, 310, 267, 5, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11829, 320, 772, 11, 77, "Input"],
+Cell[12604, 333, 714, 13, 81, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13355, 351, 240, 4, 32, "Input"],
+Cell[13598, 357, 227, 4, 34, "Output"]
+}, Open  ]],
+Cell[13840, 364, 872, 17, 91, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14749, 386, 105, 1, 81, "Section"],
+Cell[14857, 389, 426, 8, 71, "Text"],
+Cell[15286, 399, 137, 3, 31, "Text"],
+Cell[CellGroupData[{
+Cell[15448, 406, 162, 4, 32, "Input"],
+Cell[15613, 412, 117, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15767, 420, 286, 7, 55, "Input"],
+Cell[16056, 429, 117, 3, 32, "Output"],
+Cell[16176, 434, 165, 5, 34, "Output"]
+}, Open  ]],
+Cell[16356, 442, 397, 9, 51, "Text"],
+Cell[16756, 453, 377, 8, 51, "Text"]
+}, Open  ]],
+Cell[17148, 464, 329, 6, 117, "Section"],
+Cell[17480, 472, 101, 1, 51, "Section"],
+Cell[CellGroupData[{
+Cell[17606, 477, 113, 1, 51, "Section"],
+Cell[17722, 480, 933, 14, 275, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
